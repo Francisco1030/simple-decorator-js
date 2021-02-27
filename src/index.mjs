@@ -1,5 +1,5 @@
-const User = require("./model/user.js");
-const logExecutionTime = require("./util/log-execution-time");
+import User from "./model/user.mjs";
+import logExecutionTime from "./util/log-execution-time.mjs";
 
 const user = new User({
   decoratorOptions: {

@@ -1,6 +1,6 @@
-const decorate = require("../util/decorate.js");
+import decorate from "../util/decorate.mjs";
 
-module.exports = class User {
+export default class User {
   constructor({ decoratorOptions }) {
     if (decoratorOptions) {
       decorate(this, decoratorOptions);

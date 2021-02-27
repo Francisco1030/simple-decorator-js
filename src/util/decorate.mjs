@@ -1,4 +1,4 @@
-module.exports = decorate = (fn, handler = []) => {
+export default (fn, handler = []) => {
   Object.keys(handler).forEach((property) => {
     const decorators = handler[property].reverse();
     decorators.forEach((decorator) => {
